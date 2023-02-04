@@ -22,8 +22,8 @@ function onFormSubmit(evt) {
 }
 
 function onTextValue(evt) {
-  formData.message = refs.textarea.value;
   formData.email = refs.input.value;
+  formData.message = refs.textarea.value;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
 
